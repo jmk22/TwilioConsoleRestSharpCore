@@ -32,7 +32,7 @@ namespace TwilioConsole
 
             client.Authenticator = new HttpBasicAuthenticator("AC7e610a536403b0228f065c7830d4212b", "84a465c46678a067da6bfec5bebd9d4f");
             var tcs = new TaskCompletionSource<string>();
-            String response = "";
+            var response = "";
             Task.Run(async () =>
             {
                 response = await GetResponseContentAsync(client, request);
