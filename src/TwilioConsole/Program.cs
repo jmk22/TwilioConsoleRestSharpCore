@@ -21,9 +21,7 @@ namespace TwilioConsole
             request.AddParameter("Body", "Hello again!");
 
             client.Authenticator = new HttpBasicAuthenticator("AC7e610a536403b0228f065c7830d4212b", "84a465c46678a067da6bfec5bebd9d4f");
-            client.ExecuteAsync(request, response => {
-                Console.WriteLine(response);
-            });
+            client.ExecuteAsync(request);
             Console.ReadLine();
         }
     }
