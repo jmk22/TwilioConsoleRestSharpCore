@@ -7,8 +7,8 @@
 -debug:full
 -nostdlib
 -nologo
-"c:\users\epicodus\documents\visual studio 2015\Projects\TwilioConsole\src\TwilioConsole\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
--out:"c:\users\epicodus\documents\visual studio 2015\Projects\TwilioConsole\src\TwilioConsole\bin\Debug\netcoreapp1.0\TwilioConsole.dll"
+"C:\Users\epicodus\Desktop\TwilioConsoleRestSharpCore\src\TwilioConsole\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
+-out:"C:\Users\epicodus\Desktop\TwilioConsoleRestSharpCore\src\TwilioConsole\bin\Debug\netcoreapp1.0\TwilioConsole.dll"
 -r:"C:\Users\epicodus\.nuget\packages\Microsoft.CSharp\4.0.1\ref\netstandard1.0\Microsoft.CSharp.dll"
 -r:"C:\Users\epicodus\.nuget\packages\Microsoft.VisualBasic\10.0.1\ref\netstandard1.1\Microsoft.VisualBasic.dll"
 -r:"C:\Users\epicodus\.nuget\packages\Microsoft.Win32.Primitives\4.0.1\ref\netstandard1.3\Microsoft.Win32.Primitives.dll"
@@ -94,5 +94,5 @@
 -r:"C:\Users\epicodus\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
 -r:"C:\Users\epicodus\.nuget\packages\System.Xml.XmlSerializer\4.0.11\ref\netstandard1.3\System.Xml.XmlSerializer.dll"
-"c:\users\epicodus\documents\visual studio 2015\Projects\TwilioConsole\src\TwilioConsole\Program.cs"
-"c:\users\epicodus\documents\visual studio 2015\Projects\TwilioConsole\src\TwilioConsole\Properties\AssemblyInfo.cs"
+"C:\Users\epicodus\Desktop\TwilioConsoleRestSharpCore\src\TwilioConsole\Program.cs"
+"C:\Users\epicodus\Desktop\TwilioConsoleRestSharpCore\src\TwilioConsole\Properties\AssemblyInfo.cs"

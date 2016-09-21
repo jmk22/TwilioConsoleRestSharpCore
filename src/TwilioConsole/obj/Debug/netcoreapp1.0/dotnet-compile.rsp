@@ -1,5 +1,5 @@
---temp-output:c:\users\epicodus\documents\visual studio 2015\Projects\TwilioConsole\src\TwilioConsole\obj\Debug\netcoreapp1.0\
---out:c:\users\epicodus\documents\visual studio 2015\Projects\TwilioConsole\src\TwilioConsole\bin\Debug\netcoreapp1.0\TwilioConsole.dll
+--temp-output:C:\Users\epicodus\Desktop\TwilioConsoleRestSharpCore\src\TwilioConsole\obj\Debug\netcoreapp1.0\
+--out:C:\Users\epicodus\Desktop\TwilioConsoleRestSharpCore\src\TwilioConsole\bin\Debug\netcoreapp1.0\TwilioConsole.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -98,5 +98,5 @@
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XmlSerializer\4.0.11\ref\netstandard1.3\System.Xml.XmlSerializer.dll
-c:\users\epicodus\documents\visual studio 2015\Projects\TwilioConsole\src\TwilioConsole\Program.cs
-c:\users\epicodus\documents\visual studio 2015\Projects\TwilioConsole\src\TwilioConsole\Properties\AssemblyInfo.cs
+C:\Users\epicodus\Desktop\TwilioConsoleRestSharpCore\src\TwilioConsole\Program.cs
+C:\Users\epicodus\Desktop\TwilioConsoleRestSharpCore\src\TwilioConsole\Properties\AssemblyInfo.cs
