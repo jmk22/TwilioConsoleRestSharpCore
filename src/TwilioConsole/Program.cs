@@ -31,21 +31,21 @@ namespace TwilioConsole
             request.AddParameter("Body", "Hello again!");
 
             client.Authenticator = new HttpBasicAuthenticator("AC7e610a536403b0228f065c7830d4212b", "84a465c46678a067da6bfec5bebd9d4f");
-            var tcs = new TaskCompletionSource<string>();
-            var response = "";
+            var response = new RestResponse();
             Task.Run(async () =>
             {
-                response = await GetResponseContentAsync(client, request);
+                response = await GetResponseContentAsync(client, request) as RestResponse;
             }).Wait();
-            Console.WriteLine(response);
+            Console.WriteLine(response.GetType());
+            Console.WriteLine(response.Content);
             Console.ReadLine();
         }
 
-        public static Task<string> GetResponseContentAsync(RestClient theClient, RestRequest theRequest)
+        public static Task<IRestResponse> GetResponseContentAsync(RestClient theClient, RestRequest theRequest)
         {
-            var tcs = new TaskCompletionSource<string>();
+            var tcs = new TaskCompletionSource<IRestResponse>();
             theClient.ExecuteAsync(theRequest, response => {
-                tcs.SetResult(response.Content);
+                tcs.SetResult(response);
             });
             return tcs.Task;
         }
