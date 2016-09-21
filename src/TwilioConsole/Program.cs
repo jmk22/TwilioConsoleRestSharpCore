@@ -24,7 +24,7 @@ namespace TwilioConsole
         public static void Main(string[] args)
         {
             var client = new RestClient("https://api.twilio.com/2010-04-01");
-            var request = new RestRequest("Accounts/AC7e610a536403b0228f065c7830d4212b/Messages.json", Method.POST);
+            var request = new RestRequest("Accounts/AC7e610a536403b0228f065c7830d4212b/Messages.json", Method.GET);
 
             request.AddParameter("To", "+14049812892");
             request.AddParameter("From", "+14703278015");
@@ -36,8 +36,15 @@ namespace TwilioConsole
             {
                 response = await GetResponseContentAsync(client, request) as RestResponse;
             }).Wait();
-            Console.WriteLine(response.GetType());
-            Console.WriteLine(response.Content);
+            JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(response.Content);
+            var messageList = JsonConvert.DeserializeObject<List<Message>>(jsonResponse["messages"].ToString());
+            foreach (var message in messageList)
+            {
+                Console.WriteLine("To: {0}", message.To);
+                Console.WriteLine("From: {0}", message.From);
+                Console.WriteLine("Body: {0}", message.Body);
+                Console.WriteLine("Status: {0}", message.Status);
+            }
             Console.ReadLine();
         }
 
